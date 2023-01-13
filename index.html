@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Band</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<nav id="main-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Band</a></li>
+				<li><a href="#">Tour</a></li>
+				<li><a href="#">Contact</a></li>
+				<li>
+					<a href="#">More <span class="caret"></span></a>
+					<ul>
+						<li><a href="#">Merchandise</a></li>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+				</li>
+			</ul>
+			<span id="search-button">
+				<button type="button"></button>
+			</span>
+			<div class="clear"></div>
+		</nav>
+		<div class="clear"></div>
+		<div id="header-slider">
+			<ul>
+				<li>
+					<img src="img/slide1.jpg">
+					<div class="caption">
+						<h2>SAME STREET</h2>
+						<!-- <h3>Music lovers welcome</h3> -->
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<section id="the-band" class="wrap">
+		<h1 class="title">The Band</h1>
+		<h5 class="sub-title">We love music</h5>
+		<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<div class="center">
+			<div class="artist">
+				<h5>Name</h5>
+				<img src="img/artist.jpg">
+			</div>
+
+			<div class="artist">
+				<h5>Name</h5>
+				<img src="img/artist.jpg">
+			</div>
+
+			<div class="artist">
+				<h5>Name</h5>
+				<img src="img/artist.jpg">
+			</div>
+		</div>
+		<div class="clear"></div>
+
+	</section>
+
+	<section id="tour-date">
+		<div class="wrap">
+			<h1 class="title">Tour Dates</h1>
+			<h5 class="sub-title">Remember to book your tickets!</h5>
+
+			<ul class="month">
+				<li>September <span class="sold-out"></span></li>
+				<li>October <span class="sold-out"></span></li>
+				<li>November <span class="notification"></span></li>
+			</ul>
+
+			<article id="tickets">
+				<div class="ticket">
+					<div class="t-img"><img src="img/newyork.jpg" alt="New York" title="New York" /></div>
+					<div class="t-desc">
+						<h5>New York</h3>
+						<div class="t-date">Fri 27 Nov 2016</div>
+						<div class="t-details"><p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p></div>
+						<div class="btn-wrap">
+							<a href="#" class="t-btn">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="ticket">
+					<div class="t-img"><img src="img/paris.jpg" alt="Paris" title="Paris" /></div>
+					<div class="t-desc">
+						<h5>Paris</h3>
+						<div class="t-date">Sat 28 Nov 2016</div>
+						<div class="t-details"><p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p></div>
+						<div class="btn-wrap">
+							<a href="#" class="t-btn">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="ticket">
+					<div class="t-img"><img src="img/sanfran.jpg" alt="San Francisco" title="San Francisco" /></div>
+					<div class="t-desc">
+						<h5>San Francisco</h3>
+						<div class="t-date">Sun 29 Nov 2016</div>
+						<div class="t-details"><p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p></div>
+						<div class="btn-wrap">
+							<a href="#" class="t-btn">Buy Tickets</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</article>
+
+
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="wrap">
+			<h1 class="title">Contact</h1>
+			<h5 class="sub-title">Fan? Drop a note!</h5>
+
+			<div class="left">
+				<div><span class="glyphicon glyphicon-map-marker"></span><span>Chicago, US</span></div>
+				<div><span class="glyphicon glyphicon-earphone"></span><span>Phone: +00 151515</span></div>
+				<div><span class="glyphicon glyphicon-envelope"></span><span>Email: mail@mail.com</span></div>
+
+			</div>
+
+			<div class="right">
+				<form method="get" action="#" name="frm-contact">
+					<span><input type="text" name="name" placeholder="Name" /></span>
+					<span><input type="email" name="email" placeholder="E-mail" /></span>
+					<span><input type="text" name="message" placeholder="Message" /></span>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+
+	</section>
+
+</body>
+</html>

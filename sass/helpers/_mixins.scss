@@ -1,0 +1,46 @@
+@mixin center {
+  text-align: center;
+}
+
+@mixin title {
+	@include center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+@mixin sub-title {
+	@include center;
+	font-style: italic;
+}
+
+@mixin clearfix {
+  display: block;
+	clear: both;
+}
+
+@mixin wrapper {
+  width: 960px;
+	margin: 0 auto;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin font($size: 14px, $weight: normal) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+@mixin border-side($side, $width, $style, $color) {
+  border-#{$side}: $width, $style, $color;
+}

@@ -1,0 +1,30 @@
+
+@import "layout/navigation";
+
+/* --- Slider ----- */
+#header-slider {
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			position: relative;
+			img {
+				width: 100%;
+			}
+
+			.caption {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				h3 {
+					color: $color-white;
+					text-align: center;
+				}
+				p {
+					@extend h3;
+				}
+			}
+		}
+	}
+}

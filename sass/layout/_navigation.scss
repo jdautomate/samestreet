@@ -1,0 +1,72 @@
+
+/*-- Main menu ----*/
+#main-menu {
+	background-color: $black-bg;
+	padding: 0 1em;
+	ul {
+		margin: 0;
+		padding-left: 0;
+		float: left;
+		li {
+			float: left;
+			list-style: none;
+			position: relative;
+			a {
+				color: $color-white;
+				display: inline-block;
+				padding: 1em 1.5em;
+				font-size: 1.1em;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $grey-bg;
+					color: $color-black;
+					text-decoration: none;
+					}
+				}
+			&:hover {
+				& > ul {
+					display: block;
+					float: none;
+					position: absolute;
+					z-index: 1000;
+					background-color: $black-bg;
+					li {
+						float: none;
+						a {
+							display: block;
+						}
+					}
+				}
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/*-- Search button ----*/
+#search-button {
+	float: right;
+	button {
+		border: none;
+		box-shadow: none;
+		width: 64px;
+		height: 51px;
+		padding: 1em 1em;
+		background: {
+			image: url("img/icons/searchW.png");
+			repeat: no-repeat;
+			position: center center;
+			color: transparent;
+		}
+		&:hover {
+			background: {
+				image: url("img/icons/search.png");
+				color: $red;
+			}
+
+		}
+	}
+}

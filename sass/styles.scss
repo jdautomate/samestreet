@@ -1,0 +1,20 @@
+// --- Variables ----
+@import "helpers/vars";
+// --- Mixins ----
+@import "helpers/mixins";
+
+/*-- clearfix --*/
+.clear {
+	@include clearfix;
+}
+
+/*-- wrapper --*/
+.wrap {
+	@include wrapper;
+}
+
+/* --- Header ---- */
+@import "layout/header";
+
+/* --- Content ---- */
+@import "layout/page";

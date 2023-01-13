@@ -1,0 +1,152 @@
+/*--------- The Band ---------------------*/
+.center {
+	@include center;
+}
+
+#the-band {
+	padding: 1em 0 5em 0;
+	.title {
+		@include title;
+		margin-bottom: 1em;
+	}
+
+	.sub-title {
+		@include sub-title;
+	}
+
+	p {
+		margin: 2em 0;
+	}
+}
+
+
+.artist {
+	width: 300px / 960px * 100%;
+	float: left;
+	margin-left: 1em;
+	h5 {
+
+	}
+
+	img {
+		width: 50%;
+		@include border-radius(5px);
+	}
+}
+
+/*--------- The Band End ---------------------*/
+
+/*--------- Tour Dates ---------------------*/
+
+	#tour-date {
+		padding: 1em 0 5em 0;
+		background-color: $black-bg;
+		.title {
+			@include title;
+			margin-bottom: 1em;
+			color: $color-white;
+		}
+
+		.sub-title {
+			@include sub-title;
+			color: #777;
+		}
+	}
+
+	.month {
+		padding-left: 0;
+		li {
+			list-style: none;
+			background-color: $color-white;
+			padding: 1em 0.5em;
+			border-bottom: {
+				color: #777;
+				style: solid;
+				width: 1px;
+			}
+		}
+	}
+
+	#tickets {
+		.ticket {
+			width: percentage(300px/960px);
+			float: left;
+			margin: 0 1.5rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:nth-last-child(2) {
+				margin-left: 1.5rem;
+				margin-right: 0;
+			}
+
+			.t-img img {
+				max-width: 100%;
+			}
+
+			.t-desc {
+				background-color: $color-white;
+				padding: 1.5rem 1rem;
+
+				h5 {
+					margin-top: 0;
+					@include font(16px, bold);
+				}
+
+				.t-date {
+					margin: 1rem 0;
+					@include font(16px, 100);
+				}
+
+				.t-details p {
+					margin: 1rem 0;
+				}
+
+				.btn-wrap {
+					margin: 1rem 0;
+					.t-btn {
+						background-color: $color-black;
+						color: $color-white;
+						padding: 1rem;
+						display: inline-block;
+						@include border(1px, solid, $color-black);
+
+						&:hover, &:focus {
+							text-decoration: none;
+							background-color: transparent;
+							color: $color-black;
+						}
+					}
+				}
+			}
+		}
+	}
+
+/*--------- Tour Dates End ---------------------*/
+
+/*--------- Contact ---------------------*/
+#contact {
+	.title {
+		@include title;
+		margin-bottom: 1em;
+		color: $color-black;
+	}
+
+	.sub-title {
+		@include sub-title;
+		color: #777;
+	}
+
+	.left {
+			width: percentage(480px/960px);
+			float: left;
+	}
+
+	.right {
+		width: percentage(480px/960px);
+		float: right;
+	}
+}
+/*--------- Contact End ---------------------*/

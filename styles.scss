@@ -1,0 +1,211 @@
+$black-bg: #000;
+$grey-bg: #d3d3d3;
+$color-white: #fff;
+$color-black: #000;
+$red: #ff7b77;
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*--------- header ----------------------*/
+#main-menu {
+	background-color: $black-bg;
+	padding: 0 1em;
+	ul {
+		margin: 0;
+		padding-left: 0;
+		float: left;
+		li {
+			float: left;
+			list-style: none;
+			position: relative;
+			a {
+				color: $color-white;
+				display: inline-block;
+				padding: 1em 1.5em;
+				font-size: 1.1em;
+				text-transform: uppercase;
+				&:hover {
+					background-color: $grey-bg;
+					color: $color-black;
+					text-decoration: none;
+					}
+				}
+			&:hover {
+				& > ul {
+					display: block;
+					float: none;
+					position: absolute;
+					z-index: 1000;
+					background-color: $black-bg;
+					li {
+						float: none;
+						a {
+							display: block;
+						}
+					}
+				}
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+}
+
+.arrow-down {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	display: inline-block;
+}
+
+#search-button {
+	float: right;
+	button {
+		border: none;
+		box-shadow: none;
+		width: 64px;
+		height: 51px;
+		padding: 1em 1em;
+		background: {
+			image: url("img/icons/searchW.png");
+			repeat: no-repeat;
+			position: center center;
+			color: transparent;
+		}
+		&:hover {
+			background: {
+				image: url("img/icons/search.png");
+				color: $red;
+			}
+
+		}
+	}
+}
+
+#header-slider {
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			position: relative;
+			img {
+				width: 100%;
+			}
+
+			.caption {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				h3 {
+					color: $color-white;
+					text-align: center;
+				}
+				p {
+					@extend h3;
+				}
+			}
+		}
+	}
+}
+
+/*--------- header End---------------------*/
+
+
+/*--------- The Band ---------------------*/
+
+.center {
+	text-align: center;
+}
+
+@mixin title {
+	@extend .center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+@mixin sub-title {
+	@extend .center;
+	font-style: italic;
+}
+
+#the-band {
+	padding: 1em 0 5em 0;
+	.title {
+		@include title;
+		margin-bottom: 1em;
+	}
+
+	.sub-title {
+		@include sub-title;
+	}
+
+	p {
+		margin: 2em 0;
+	}
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+.artist {
+	width: 300px / 960px * 100%;
+	float: left;
+	margin-left: 1em;
+	h5 {
+
+	}
+
+	img {
+		width: 50%;
+		@include border-radius(5px);
+	}
+}
+
+/*--------- The Band End ---------------------*/
+
+/*--------- Tour Dates ---------------------*/
+
+	#tour-date {
+		padding: 1em 0 5em 0;
+		background-color: $black-bg;
+		.title {
+			@include title;
+			margin-bottom: 1em;
+			color: $color-white;
+		}
+
+		.sub-title {
+			@include sub-title;
+			color: #777;
+		}
+	}
+
+	.month {
+		li {
+			list-style: none;
+			background-color: $color-white;
+			padding: 1em 0.5em;
+			border-bottom: {
+				color: #777;
+				style: solid;
+				width: 1px;
+			}
+		}
+	}
+
+/*--------- Tour Dates End ---------------------*/
